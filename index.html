@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="banner-wrapper">
+            <img id="logo" src="Images/gaberoll-logo.png" alt="Gaberoll logo" draggable="false"/>
+            <img id="banner-bg" src="Images/cloud-background.jpg" alt="Background image of clouds." draggable="false">
+        </div>
+        <div class="content-wrapper primary">
+            <p class="margin-main font-x">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br/> Sign up <em>now</em> to get started.</p>
+            <p class="margin-main font-x">You <em>know</em> you want to.</p>
+            <div class="form-wrapper secondary">
+                <p class="margin-main font-x">Let's do this!</p>
+                <form class="margin-main" id="login-form" action="" method="post">
+                    <div class="input-name">
+                        <div class="first-name-wrapper">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" minlength="2" maxlength="16" placeholder="John" required/>
+                        </div>
+                        <div class="last-name-wrapper">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" minlength="2" maxlength="16" placeholder="Doe" required/>
+                        </div>
+                    </div>
+                    <div class="input-contact">
+                        <div class="email-wrapper">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@example.com" pattern="^[A-Za-z0-9]+@[A-Za-z0-9]+.(com|org|edu|gov|net|io|info)$" required/>
+                            </div>
+                        <div class="phone-wrapper"><label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890" pattern="^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$" required/>
+                        </div>
+                    </div>
+                    <div class="input-password">
+                        <div class="pass-wrapper">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" minlength="8" required>
+                        </div>
+                        <div class="pass-confirm-wrapper">
+                            <label for="pass-confirm">Confirm Password</label>
+                            <input type="password" name="pass-confirm" id="pass-confirm" minlength="8" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-wrapper">
+                <button class="primary-btn" type="submit" form="login-form">Create Account</button>
+                <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
